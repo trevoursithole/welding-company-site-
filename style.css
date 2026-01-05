@@ -1,0 +1,53 @@
+:root {
+    --navy: #1A1F71; --orange: #FFA500; --charcoal: #333333; --white: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+html { scroll-behavior: smooth; }
+body { background: #f4f4f4; color: var(--charcoal); line-height: 1.6; }
+
+/* Header & Nav */
+.top-bar { background: var(--charcoal); color: white; padding: 10px 10%; display: flex; justify-content: space-between; font-size: 0.85rem; }
+nav { background: white; padding: 20px 10%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+.logo-text { font-size: 1.8rem; font-weight: 800; color: var(--navy); }
+.logo-text span { color: var(--orange); }
+.nav-links { list-style: none; display: flex; align-items: center; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { text-decoration: none; color: var(--charcoal); font-weight: 600; }
+.nav-btn { background: var(--orange); color: white !important; padding: 8px 18px; border-radius: 4px; transition: 0.3s; }
+.nav-btn:hover { background: var(--navy); }
+
+/* Hero */
+.hero { height: 60vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/img/low-angle-view-scafolding-building.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: white; }
+.highlight { color: var(--orange); }
+.btn-primary { background: var(--orange); color: white; padding: 15px 35px; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 1.1rem; display: inline-block; margin-top: 20px; }
+
+/* Gallery */
+#gallery { padding: 80px 10%; background: white; }
+.section-title { font-size: 2.5rem; color: var(--navy); text-align: center; margin-bottom: 40px; }
+.zoom-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+.insta-item img { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; cursor: zoom-in; transition: 0.4s; border: 1px solid #ddd; }
+.insta-item img:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(0,0,0,0.2); border-color: var(--orange); }
+
+/* Contact Form */
+#contact { padding: 80px 10%; background: #f9f9f9; }
+.contact-container { display: flex; flex-wrap: wrap; gap: 50px; }
+.contact-info, .contact-form { flex: 1; min-width: 300px; }
+.contact-form input, .contact-form textarea { width: 100%; padding: 15px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem; }
+.form-submit { background: var(--navy); color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; width: 100%; transition: 0.3s; }
+.form-submit:hover { background: var(--orange); }
+
+/* Spark Animation */
+.floating-tool { position: fixed; right: 30px; top: 40%; font-size: 2.5rem; color: var(--orange); z-index: 999; }
+.spark-effect { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle, var(--orange) 0%, transparent 70%); filter: blur(8px); animation: spark-flash 0.3s infinite alternate; }
+@keyframes spark-flash { from { opacity: 0.3; transform: scale(1); } to { opacity: 0.9; transform: scale(1.5); } }
+
+/* Lightbox Modal */
+.modal { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); padding-top: 80px; }
+.modal-content { margin: auto; display: block; max-width: 80%; border: 3px solid var(--orange); border-radius: 10px; }
+.close-modal { position: absolute; top: 30px; right: 35px; color: white; font-size: 40px; cursor: pointer; }
+
+/* WhatsApp */
+.whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; padding: 15px 25px; border-radius: 50px; display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: bold; z-index: 1000; border: 2px solid white; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+
+footer { padding: 40px; text-align: center; background: var(--charcoal); color: white; }

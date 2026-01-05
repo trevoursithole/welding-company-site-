@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronClad Welding | Winterveldt Pretoria</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="top-bar">
+        <span><i class="fas fa-map-marker-alt"></i> Klip Road, Winterveldt, Pretoria</span>
+        <span><i class="fas fa-phone"></i> +27 69 161 6943</span>
+    </div>
+
+    <nav>
+        <div class="logo-container">
+            <div class="logo-text">IRON<span>CLAD</span></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Projects</a></li>
+            <li><a href="#contact" class="nav-btn">Request Quote</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Industrial Welding in <span class="highlight">Winterveldt</span></h1>
+            <p>High-Security Gates, Steel Doors, and Precision Frames.</p>
+            <a href="#contact" class="btn-primary">Start Your Quote</a>
+        </div>
+    </header>
+
+    <section id="gallery">
+        <h2 class="section-title">Our Workmanship</h2>
+        <p style="text-align:center; margin-bottom:20px;">Click images to zoom in on weld quality</p>
+        <div class="zoom-grid">
+            <div class="insta-item"><img src="assets/img/intercom-gate-front-residential-building.jpg" class="zoomable" alt="Security Gate"></div>
+            <div class="insta-item"><img src="assets/img/low-angle-view-scafolding-building.jpg" class="zoomable" alt="Structural Steel"></div>
+            <div class="insta-item"><img src="assets/img/japanese-house-entrance-with-fence.jpg" class="zoomable" alt="Modern Fence"></div>
+            <div class="insta-item"><img src="assets/img/house-entrance-japan-building-with-fence.jpg" class="zoomable" alt="Entrance Frame"></div>
+            <div class="insta-item"><img src="assets/img/construction-worker-painting-fence-home.jpg" class="zoomable" alt="Finishing Work"></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Request a Quote</h2>
+                <p>Based on Klip Road. We respond to all inquiries within 24 hours.</p>
+                <p><strong>Call/WhatsApp:</strong> +27 69 161 6943</p>
+            </div>
+            <form action="https://formspree.io/f/YOUR_ENDPOINT" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Full Name" required>
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                <textarea name="message" rows="5" placeholder="Tell us about your gate, door, or window project..." required></textarea>
+                <button type="submit" class="form-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="floating-tool">
+        <i class="fas fa-fire-alt"></i>
+        <div class="spark-effect"></div>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="imgFull">
+    </div>
+
+    <a href="https://wa.me/27691616943" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="wa-label">Chat with us</span>
+    </a>
+
+    <footer>
+        <p>&copy; 2026 IronClad Welding Services | Winterveldt, Pretoria</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
