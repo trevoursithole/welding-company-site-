@@ -56,3 +56,4 @@ The project is optimized for deployment via GitHub Pages, Netlify, or Vercel.
 * Ensure all files are in the root directory except for images.
 * Confirm that the 'assets' folder is uploaded in its entirety to prevent broken paths.
 * Verify the live URL on a mobile device to ensure the pulsing WhatsApp button is visible and functional.
+
